@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+body {
+  background-color: black;
+  font-family: 'Fjalla One', sans-serif;
+}
+.main {
+  width: 380px;
+  height: 470px;
+  margin: 40px auto;
+  border: 10px solid rgb(121, 156, 121);
+  border-radius: 20px;
+  background-color: yellowgreen;
+  box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.25) inset,
+    2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.screen {
+  font-size: 30px;
+}
+
+.display {
+  margin-bottom: 20px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px black inset;
+  text-align: right;
+}
+.display-1 {
+  text-align: right;
+  margin-top: 25px;
+}
+.display-2 {
+  text-align: right;
+  margin-top: 5px;
+}
+.temp-result {
+  text-align: left;
+  margin-top: 5px;
+}
+#keys {
+  text-align: center;
+  height: 290px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr;
+  grid-template-areas:
+    " button-ac button-divide button-multiply button-minus"
+    "button7   button8      button9          button-plus"
+    "button4   button5      button6           button-plus"
+    "button1   button2      button3          button-equal"
+    "button0   button0      button-dot        button-del";
+  grid-gap: 0.1rem;
+}
+#button-ac {
+  grid-area: button-ac;
+  background-color: red;
+}
+#button-divide {
+  grid-area: button-divide;
+  background-color: greenyellow;
+}
+#button-multiply {
+  grid-area: button-multiply;
+  background-color: greenyellow;
+}
+#button-minus {
+  grid-area: button-minus;
+  background-color: greenyellow;
+}
+#button7 {
+  grid-area: button7;
+  background-color: yellowgreen;
+}
+#button8 {
+  grid-area: button8;
+  background-color: yellowgreen;
+}
+#button9 {
+  grid-area: button9;
+  background-color: yellowgreen;
+}
+#button0 {
+  grid-area: button0;
+  background-color: yellowgreen;
+}
+#button1 {
+  grid-area: button1;
+  background-color: yellowgreen;
+}
+#button2 {
+  grid-area: button2;
+  background-color: yellowgreen;
+}
+#button3 {
+  grid-area: button3;
+  background-color: yellowgreen;
+}
+#button4 {
+  grid-area: button4;
+  background-color: yellowgreen;
+}
+#button5 {
+  grid-area: button5;
+  background-color: yellowgreen;
+}
+#button6 {
+  grid-area: button6;
+  background-color: yellowgreen;
+}
+#button-plus {
+  grid-area: button-plus;
+  background-color: greenyellow;
+}
+#button-equal {
+  grid-area: button-equal;
+  background-color: greenyellow;
+}
+#button-dot {
+  grid-area: button-dot;
+  background-color: yellowgreen;
+}
+#button-del {
+  grid-area: button-del;
+  background-color: yellow;
+}
+
+.key {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.25) inset,
+    2px 2px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.key:hover {
+  border: 2px solid rgb(41, 138, 41);
+}
